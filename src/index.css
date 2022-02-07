@@ -1,13 +1,192 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #7d7d7d;
+  font-size:small;
+  font-weight:700;
+  
+}
+
+/*En tu hoja de estilos */
+a:link, a:visited, a:active {
+  text-decoration:none;
+  color:#7d7d7d;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main {
+  overflow-y: scroll;
+  padding-bottom: 20%;
+}
+
+
+/*<!-------------------------------------------header---------------------------------------------------------->!*/
+
+.navBar{
+  background-image: url(../public/images/background-stars.jpeg);
+}
+
+
+
+.firstContainer {
+  display: flex;
+  height: 10vh;
+  padding-bottom: 70px;
+}
+.starWarsLogo {
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+  height: 10vh;
+  
+  margin-bottom: 50px;
+}
+
+.mainStarWarsLogo {
+  max-height: 8rem;
+  /* We use percentages to fit vertical and horizontal mobile screens. */
+  height: 190%;
+  margin-left: 6rem;
+}
+
+.logins {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: none;
+}
+
+.logins > button {
+  font-size: x-small;
+  border: none;
+  background-color: black;
+  color: #7d7d7d;
+  text-decoration: none;
+}
+
+.bordeMenuPage {
+  border-top: 0.05rem solid #7d7d7d;
+  border-bottom: 0.05rem solid #7d7d7d;
+  color: #7d7d7d;
+  display: flex;
+  justify-content: center;
+}
+
+.bordeMenuPage > button {
+  font-size: x-small;
+  border: 0.05rem solid #7d7d7d;
+  border-top: none;
+  border-bottom: none;
+  background-color: black;
+  color: #7d7d7d;
+  height: 2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.buttonGo {
+  background: #494949;
+}
+
+.welcomeButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageModal{
+  width: 80px;
+  
+}
+
+.alignModal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn{
+  margin-left: 30%;
+  margin-top: 10px;
+  background-color: #7d7d7d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+.closeModal{
+  margin-left: 22%;
+
+}
+/*--------------------------------------------Ships-----------------------------------------------*/
+
+.shipsList {
+  background-color: #151515;
+  margin: 2% 15%;
+  width: 80%;
+}
+
+.shipsList > a  > p {
+  font-weight: normal;
+  padding: 4% 3% 0%;
+  margin-block-end: 0.5rem;
+  padding: 0% 3% 4%;
+  text-decoration: none;
+  margin-block-start: 0.5rem;
+}
+
+.shipsList > a > h4 {
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4% 3% 0%;
+  margin-block-end: 0.5rem;
+  padding: 0% 3% 4%;
+  text-decoration: none;
+  margin-block-start: 0.5rem;
+}
+
+.panelShips > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #7d7d7d;
+}
+
+.shipsMap{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/*----------------------------------------shipDetail------------------------------------------------*/
+
+.shipDetailFile{
+  width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nave{
+  width: 120px;
+}
+
+.buttonView{
+  margin-left: 50%;
+  background-color: #7d7d7d;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
